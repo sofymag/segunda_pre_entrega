@@ -1,0 +1,112 @@
+/*GENERAL*/
+ul{list-style-type: none;}
+a{text-decoration: none;}
+li{padding: 20px;margin: 20px;}
+.img-fluid{width: 100%;height: auto;}
+.p20{padding: 20px;}
+.mb20{margin-bottom: 20px;}
+.m20{margin: 20px;}
+.bgPrincipal{background-color: brown;}
+.bgLGrey{background-color: lightgrey;}
+.flexCard{display:flex;flex-direction: column;}
+.Card{border-radius: 20px; align-items: center;}
+.card input{width: 80%;height: 40px; border-radius: 20px;transition: 1s all;}
+*{padding: 0;margin: 0;}
+div h1{text-align: center;}
+*{padding: 0;margin: 0;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+.img20{width: 20%;height: auto;}
+.form .inputSubmit{height: 40px;}
+/*DESKTOP*/
+@media (min-width:1024px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    header{grid-area: header;}
+    main{grid-area: main;}
+    footer{grid-area: footer;}
+
+    .gridMain{
+        display: grid;
+        grid-template-areas: 
+        "imgPrincipal imgPrincipal imgPrincipal"
+        "encabezado encabezado encabezado"
+        "parrafoIzq imgParrafo parrafoDer";
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 33% 34% 33%;
+    }
+    .imgPrincipal{grid-area: imgPrincipal;}
+    .encabezado{grid-area: encabezado;}
+    .parrafoIzq{grid-area: parrafoIzq;}
+    .imgParrafo{grid-area: imgParrafo;}
+    .parrafoDer{grid-area: parrafoDer;}
+    .gridRRSS{display: grid;grid-template-areas: "rrss rrss" "logoFace logolinkedin"; grid-template-columns:
+    50% 50%; grid-template-rows: auto auto;}
+    .logolinkedin{grid-area: logolinkedin;}
+    .logoFacebook{grid-area: logoFace;}
+    .tituloRRSS{grid-area: rrss;}
+
+    /* ---------- GRID INDEX */
+     .gridServicios{
+        display: grid;
+        grid-template-areas:
+        "encServicios encServicios encServicios encServicios"
+        "card1 card2 card3 card4";
+        grid-template-columns: 25%  25%  25%  25%;
+        grid-template-rows: auto auto;
+    }
+    .encabezadoServicios{grid-template-columns: encServicios;}
+    .card1{grid-area: card1;}
+    .card2{grid-area: card2;}
+    .card3{grid-area: card3;}
+    .card4{grid-area: card4;}
+    /* ---------- GRID SERVICIOS */
+.gridContacto{
+    display: grid;
+    grid-template-areas:
+    "tituloContacto tituloContacto"
+    "form datosContacto";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+}
+.tituloContacto
+{grid-area: tituloContacto;}
+.form{grid-area: form;}
+.datosContacto{grid-area: datosContacto;}
+    /*GRID MAIN CONTACTO*/
+    header, footer, ul {display: flex;flex-direction: row;}
+    .JCSpaceBetween{justify-content: space-between;}
+    .form form, .datosContacto
+    {display:flex;
+    flex-direction: column; row-gap: 10px;}
+    .datosContacto{align-items: center;}
+
+    /* ---------- FLEX */
+    a{font-size: 22px;color: black;}
+    h1{font-size: 30px;}
+    p, label{font-size: 20px;}
+}
+/* TABLET */
+@media  (min-width:769px) and (max-width: 1023px) 
+{body {background-color: rgb(142, 69, 175);}}
+    
+/*MOBILE*/
+@media  (max-width: 768px) {
+    ul{display: flex;flex-direction: row;justify-content: center;padding-left: 0;}
+    li{padding: 2px;margin: 2px;}
+    main, footer, header{display: flex;flex-direction: column;align-items: center;}
+    .desaparecer{display: none;}
+    .gridServicios{display: flex;flex-direction: column;}
+    h1{font-size: 30px;}
+    p{font-size: 18px;}
+    .gridContacto, .form form, 
+    .datosContacto{display:flex;
+    flex-direction:column;}
+
+}
+
