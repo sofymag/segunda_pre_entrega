@@ -1,0 +1,22 @@
+.encabezado {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  transition: height 1s, width 2s, background-color 3s;
+}
+
+.encabezado:hover {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+
+.linke {
+  transition: all 2s;
+}
+
+.linke:hover {
+  transform: translateY(-50px);
+}
+
+/*# sourceMappingURL=transition.css.map */

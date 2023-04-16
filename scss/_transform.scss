@@ -1,0 +1,24 @@
+// TRANSFORM
+// TRANSLATE
+// translate acepta dos parametros(ejeX, ejeY) donde los valores positivos derecha/abajo y
+// valores negativos izquierdaz/arriba. Tambien podemos usar la funcion individual translateY() O
+// translateX()
+@media only screen and (max-width:768px){
+    h1 {transform:translate(-10px,-80px);}
+}
+@media only screen and (min-width:1023px){
+    h1 {transform:translate(-10px,-230px);}
+}
+
+// ROTATE
+// la funcion rotate acepta como parametro un valor seguido de la unidad deg
+.img-kyrie{transform:rotate(60deg);}
+
+// SCALE
+// vamos a poder escalar el contenido. La funcion acepta dos valores por parametro, el primero
+// ejeX, el segundo ejeY. valores > 1 -> agrandan; alores entre 0 y 1 -> achican; valores
+// negativos escalan dado vuelta. Como recomendacion escalar con los mismos valores.
+.logoFoo{transform:scale(1,1);}
+
+// SKEW (torcer)
+// .logo{transform:skew(60deg,20deg);}

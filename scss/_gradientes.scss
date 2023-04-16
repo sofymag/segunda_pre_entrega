@@ -1,0 +1,12 @@
+// Dos tipos de gradientes: lineal y radial
+// para usarlo tenemos que trabajar con la propiedad  background-image y dentro con la funcion
+//linear-gradient o radial-gradient. en linear primero ponemos la direccion hacia donde van los
+//colores y luego los colores que vamos a usar. En el caso de radial vamos a poner la figura
+//geometrica a replicar y los colores (dos o +)
+.gradienteHeader{
+    background-image: linear-gradient(to bottom, lightblue, transparent);
+    // background-image: radial-gradient(circle, red, blue);
+}
+.gradienteFooter{
+    background-image: linear-gradient(to top, lightblue, transparent);
+}

@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase 7 - Index</title>
+    <!--LINK CSS AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--LINKS CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="grid">
     <!--LOGO + NAV-->
-    <header class="JCSpaceBetween bgPrincipal mb20">
+    <header class="JCSpaceBetween mb20 gradienteHeader">
         <div class="logo">
             <img src="img/logoLakers.png" alt="logo lakers">
         </div>
@@ -27,25 +29,25 @@
     </header>
     <!--CONTENIDO PRINCIPAL-->
     <main class="gridMain">
-        <div class="imgPrincipal">
+        <div class="imgPrincipal" data-aos="fade-up" data-aos-duration="3000"> 
             <img src="img/header_nosotros.jpg" 
             alt="jugadores nba"
             class="img-fluid">
         </div>
-        <div class="encabezado">
+        <div class="encabezado"  data-aos="fade-up" data-aos-duration="3000">
             <h1>HOME</h1>
         </div>
-        <div class="parrafoIzq">
+        <div class="parrafoIzq"  data-aos="fade-up" data-aos-duration="3000">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quidem reiciendis totam natus saepe in
                 pariatur quam maiores ad, dolores qui laboriosam, eaque praesentium itaque modi dolore est porro. Sunt.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dolores quibusdam explicabo! Amet sit
                 labore mollitia, vel nihil quaerat saepe quia ea ab sed nobis quisquam optio. Odio, distinctio commodi!
             </p>
         </div>
-        <div class="imgParrafo p20">
+        <div class="imgParrafo p20"  data-aos="fade-up" data-aos-duration="3000">
             <img src="img/img_kyrie.jpg" 
             alt="kyrie" 
-            class="img-fluid">
+            class="img-fluid img-kyrie">
         </div>
         <div class="parrafoDer m20 desaparecer">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequatur ex provident? Voluptate
@@ -56,7 +58,7 @@
         </div>
     </main>
     <!--PIE DE PAGINA-->
-    <footer class="JCSpaceBetween bgPrincipal">
+    <footer class="JCSpaceBetween gradienteFooter">
         <div class="logoFoo p20">
             <img src="img/logoLakers.png" alt="logo lakers">
         </div>
@@ -72,6 +74,10 @@
         </div>
     </footer>
 </div>
+<!--SCRIPT AOS-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </body>
-
 </html>
